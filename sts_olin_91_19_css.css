@@ -1,0 +1,315 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+
+    background-image:
+        linear-gradient(rgba(255, 239, 190, 0.35), rgba(190, 235, 255, 0.35)),
+        url("https://pikmin.nintendo.com/images/backgrounds/pikmin-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: #3b4935;
+}
+
+.flowers span {
+    position: fixed;
+    top: -50px;
+    font-size: 25px;
+    z-index: 10;
+    animation: falling 9s linear infinite;
+    pointer-events: none;
+}
+
+.flowers span:nth-child(1) {
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.flowers span:nth-child(2) {
+    left: 15%;
+    animation-delay: 2s;
+}
+
+.flowers span:nth-child(3) {
+    left: 25%;
+    animation-delay: 4s;
+}
+
+.flowers span:nth-child(4) {
+    left: 35%;
+    animation-delay: 1s;
+}
+
+.flowers span:nth-child(5) {
+    left: 45%;
+    animation-delay: 3s;
+}
+
+.flowers span:nth-child(6) {
+    left: 55%;
+    animation-delay: 5s;
+}
+
+.flowers span:nth-child(7) {
+    left: 65%;
+    animation-delay: 2s;
+}
+
+.flowers span:nth-child(8) {
+    left: 75%;
+    animation-delay: 4s;
+}
+
+.flowers span:nth-child(9) {
+    left: 85%;
+    animation-delay: 1s;
+}
+
+.flowers span:nth-child(10) {
+    left: 95%;
+    animation-delay: 3s;
+}
+
+@keyframes falling {
+
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+header {
+    text-align: center;
+
+    margin: 70px auto 45px;
+
+    padding: 35px;
+
+    width: 70%;
+
+    background: rgba(255, 255, 255, 0.93);
+
+    border: 6px solid #ffd84d;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 7px 0 #ff9ec4,
+        0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+    font-size: 58px;
+
+    margin: 0;
+
+    color: #f5a623;
+
+    text-shadow:
+        3px 3px #ffe76b,
+        5px 5px #8bd3ff;
+}
+
+header p {
+    font-size: 21px;
+
+    margin-top: 12px;
+
+    color: #5b82b8;
+
+    font-weight: bold;
+}
+
+.gallery {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 28px;
+
+    flex-wrap: wrap;
+
+    margin: 30px auto 60px;
+
+    width: 90%;
+}
+
+.photo-card {
+    width: 230px;
+
+    background: #fffdf5;
+
+    padding: 12px;
+
+    border-radius: 22px;
+
+    text-align: center;
+
+    border: 5px solid #8bd3ff;
+
+    box-shadow:
+        0 6px 0 #ff9ec4,
+        0 8px 15px rgba(0, 0, 0, 0.2);
+
+    transition: 0.3s;
+}
+
+.photo-card:nth-child(1) {
+    border-color: #ffcf45;
+}
+
+.photo-card:nth-child(2) {
+    border-color: #ff9ec4;
+}
+
+.photo-card:nth-child(3) {
+    border-color: #72c9f5;
+}
+
+.photo-card:nth-child(4) {
+    border-color: #a9d96c;
+}
+
+.photo-card:hover {
+    transform: translateY(-10px) rotate(1deg);
+
+    box-shadow:
+        0 12px 0 #f5c842,
+        0 15px 22px rgba(0, 0, 0, 0.3);
+}
+
+.photo-card img {
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.photo-card p {
+    font-weight: bold;
+
+    margin-bottom: 5px;
+
+    color: #536b4a;
+}
+
+.information {
+    position: relative;
+
+    width: 76%;
+
+    margin: 0 auto 80px;
+
+    padding: 40px 50px;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    border-radius: 30px;
+
+    border: 7px solid #ffcf45;
+
+    box-shadow:
+        0 8px 0 #ff9ec4,
+        0 12px 25px rgba(0, 0, 0, 0.25);
+
+    line-height: 1.7;
+}
+
+.information::before {
+    content: "🌼";
+
+    position: absolute;
+
+    top: -35px;
+
+    left: 25px;
+
+    font-size: 50px;
+}
+
+.information::after {
+    content: "🌱";
+
+    position: absolute;
+
+    bottom: -35px;
+
+    right: 35px;
+
+    font-size: 50px;
+}
+
+
+.information h2 {
+    text-align: center;
+
+    font-size: 34px;
+
+    color: #5ca65c;
+
+    margin-top: 0;
+
+    text-shadow: 2px 2px #d8f3a9;
+}
+
+.information p {
+    font-size: 17px;
+
+    text-align: justify;
+
+    color: #465444;
+}
+
+header::before {
+    content: "🌸";
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+header::after {
+    content: "🌸";
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        width: 78%;
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+    .information {
+        width: 72%;
+        padding: 30px;
+    }
+
+    .information p {
+        font-size: 15px;
+    }
+
+    .photo-card {
+        width: 260px;
+    }
+}
+
